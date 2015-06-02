@@ -45,6 +45,18 @@ ADD_REQUIRED_DEPENDENCY("jrl-dynamics >= 1.19.0")
 ADD_OPTIONAL_DEPENDENCY("hrp2-dynamics >= 1.5.0")
 ADD_OPTIONAL_DEPENDENCY("hrp2-10-optimized >= 1.0.1")
 
+IF(hrp2-dynamics_FOUND)
+  MESSAGE(STATUS hrp2-dynamics_FOUND)
+ENDIF()
+
+IF(jrl-dynamics_FOUND)
+  MESSAGE(STATUS jrl-dynamics_FOUND)
+ENDIF()
+
+IF(jrl-mal_FOUND)
+  MESSAGE(STATUS jrl-mal_FOUND)
+ENDIF()
+
 ADD_OPTIONAL_DEPENDENCY("hrp2-10 >= 1.0.1-10")
 ADD_OPTIONAL_DEPENDENCY("hrp2-14 >= 1.8-6")
 
